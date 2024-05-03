@@ -52,7 +52,7 @@ Permite o cadastro de pedidos com o respectivo fornecedor, produto, quantidade, 
 ## Resultado
 
 Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e Pedidos, com exceção dos Pedidos, todas as consultas são feitas com filtros, E necessário corrigir / acrescentar função para editar/excluir. *Verificar funcionalidades pendentes a serem inseridas no código.
-
+<div style="text-align:center">
 ![Tela Home](Imagem/HOME.png)
 ## Tela Home
 ![Tela Cadastro de Loja](Imagem/cadLoja.png)
@@ -71,7 +71,7 @@ Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e
 ## Tela Cadastro de Pedido
 ![Tela Consulta de Pedido](Imagem/ConsForn.png)
 ## Tela Consulta de Pedido
-
+</div>
 ## Conclusão
 
 Em resumo, o projeto Controle de Estoque tem sido uma jornada de aprendizado com Visual Basic, ASP.NET e SQL Server. Ainda há funcionalidades em desenvolvimento, mas o progresso até agora é encorajador. Continuo comprometido com o desenvolvimento do sistema.
