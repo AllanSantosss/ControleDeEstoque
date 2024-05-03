@@ -53,7 +53,7 @@ Permite o cadastro de pedidos com o respectivo fornecedor, produto, quantidade, 
 
 Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e Pedidos, com exceção dos Pedidos, todas as consultas são feitas com filtros, E necessário corrigir / acrescentar função para editar/excluir. *Verificar funcionalidades pendentes a serem inseridas no código.
 
-![Tela Home](caminho/para/sua/imagem.jpg)
+![Tela Home](Imagem/HOME.png)
 
 ![Tela Cadastro de Loja](caminho/para/sua/imagem.jpg)
 
