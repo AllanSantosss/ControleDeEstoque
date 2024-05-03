@@ -5,13 +5,16 @@ Este projeto tem como objetivo desenvolver um sistema de controle de estoque par
 
 ## Descrição Geral do Projeto
 
+
 ### Base de Dados do Sistema
 
 ![Base de Dados](Imagem/DiagramaControleEstoque.png)
 
+
 ### Desenho da Solução
 
 ![Sistema](Imagem/Desenhodasolucao.png)
+
 
 ## Objetivos do Projeto
 
@@ -55,22 +58,31 @@ Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e
 
 ![Tela Home](Imagem/HOME.png)
 ## Tela Home
+
 ![Tela Cadastro de Loja](Imagem/cadLoja.png)
 ## Tela Cadastro de Cliente
+
 ![Tela Consulta Loja](Imagem/ConsLoja.png)
 ## Tela Consulta de Cliente
+
 ![Tela Cadastro de Produto](Imagem/CadProd.png)
 ## Tela Cadastro de Produtos
+
 ![Tela Consulta de Produto](Imagem/ConsProd.png)
 ## Tela Consulta de Produtos
+
 ![Tela Cadastro de Fornecedor](Imagem/CadForn.png)
 ## Tela Cadastro de Fornecedor
+
 ![Tela Consulta de Fornecedor](Imagem/ConsForn.png)
 ## Tela Consulta de Fornecedor
+
 ![Tela Cadastro de Pedido](Imagem/CadForn.png)
 ## Tela Cadastro de Pedido
+
 ![Tela Consulta de Pedido](Imagem/ConsForn.png)
 ## Tela Consulta de Pedido
+
 
 ## Conclusão
 
