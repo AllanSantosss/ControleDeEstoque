@@ -7,7 +7,7 @@ Este projeto tem como objetivo desenvolver um sistema de controle de estoque par
 
 ### Base de Dados do Sistema
 
-![Base de Dados](caminho/para/sua/imagem.jpg)
+![Base de Dados](Imagem/DiagramaControleEstoque.png)
 
 ### Desenho da Solução
 
