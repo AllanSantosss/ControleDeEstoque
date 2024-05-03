@@ -11,7 +11,7 @@ Este projeto tem como objetivo desenvolver um sistema de controle de estoque par
 
 ### Desenho da Solução
 
-![Sistema](caminho/para/sua/imagem.jpg)
+![Sistema](Imagem/Desenho da solucao.png)
 
 ## Objetivos do Projeto
 
