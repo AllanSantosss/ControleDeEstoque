@@ -1,0 +1,257 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="ProjetoDashBoard.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="pt">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Meu Aplicativo ASP.NET</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Css/Style.css" rel="stylesheet" type="text/css" />
+    <!-- Link para o Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o kit de ícones do Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+
+
+
+</head>
+<body>
+    <form id="form" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="wrapper ">
+            <aside id="sidebar">
+                <div class="d-flex position-fixed mx-4 ms-4 my-4">
+                    <button style="background-color:transparent; color:white; border:2px; " id="toggle-btn" type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="sidebar-logo mx-2">
+                        <a href="#">Menu</a>
+                    </div>
+                </div>
+                <ul class="sidebar-nav my-5">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#cli" aria-expanded="false" aria-controls="cli">
+                            <i class="fas fa-user"></i>
+                            <span>Lojas</span>
+                        </a>
+                        <ul id="cli" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="CadLoja.aspx" class="sidebar-link">Cadastrar Loja</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="ConsLoja.aspx" class="sidebar-link">Consultar Lojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#prod" aria-expanded="false" aria-controls="prod">
+                            <i class="fab fa-product-hunt"></i>
+                            <span>Produtos</span>
+                        </a>
+                        <ul id="prod" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="CadProd.aspx" class="sidebar-link">Cadastrar Produto</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="ConsProd.aspx" class="sidebar-link">Consultar Produto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#forn" aria-expanded="false" aria-controls="forn">
+                            <i class="fas fa-boxes"></i>
+                            <span>Fornecedores</span>
+                        </a>
+                        <ul id="forn" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="CadForn.aspx" class="sidebar-link">Cadastrar Fornecedor</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="ConsForn.aspx" class="sidebar-link">Consultar Fornecedor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#vend" aria-expanded="false" aria-controls="vend">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Controle de Fluxo</span>
+                        </a>
+                        <ul id="vend" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi-trhee" aria-expanded="false" aria-controls="multi-trhee">Entregas</a>
+
+                                <ul id="multi-trhee" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Cadastrar Entrega</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Consultar Entrega</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi-four" aria-expanded="false" aria-controls="multi-four">Pedidos</a>
+
+                                <ul id="multi-four" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="CadPedido.aspx" class="sidebar-link">Cadastrar Pedido</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Consultar Pedido</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#conf" aria-expanded="false" aria-controls="conf">
+                            <i class="fas fa-cogs"></i>
+                            <span>Configurações</span>
+                        </a>
+                        <ul id="conf" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                            <i class="fas fa-list"></i>
+                            <span>Multi Level</span>
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">Dois Links</a>
+
+                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Link 1</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">Link 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>                    
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="#" class="sidebar-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Sair</span>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="main">
+                <nav class="navbar navbar-expand px-4 py-3">
+
+                    <!-- Primeiro container -->
+                    <div class="col d-flex align-items-center">
+                        <span class="logo">CONTROLE ESTOQUE</span>
+                        <span class="home-link ms-3 mx-1"><a href="Default.aspx">Home</a></span>
+                        <!-- Adicione uma classe separada para "Home" -->
+                    </div>
+                    
+
+                    <!-- Segundo container -->
+                    <div class="col d-none d-sm-block">
+                        <form action="#" class="d-none d-sm-inline-block">
+                            <div class="input-group input-group-navbar">
+                                <input type="text" class="form-control border-0 rounded-0" placeholder="search.." />
+                                <button style="width:80px;" class="btn btn-light border-0 rounded-0 " type="button">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Terceiro container -->
+                    <div class="col">
+                        <div class="navbar-collapse collapse">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="sidebar-link has-dropdown-collapsed" data-bs-toggle="collapse" data-bs-target="#dropdownMenu" aria-expanded="false" aria-controls="dropdownMenu">
+                                        <img src="Imagem/account.png" class="avatar img-fluid" alt="" />
+                                    </a>
+
+                                    <div id="dropdownMenu" class="dropdown-menu dropdown-menu-end rounded">
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-regular fa-gear"></i>
+                                            <span>Setting</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-regular fa-circle-question"></i>
+                                            <span>Ajuda</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+
+                <div class="container body-content sidebar-expanded">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <hr />
+                    <footer>
+                        <p>&copy; <%: DateTime.Now.Year %> - Meu Aplicativo ASP.NET</p>
+                    </footer>
+                </div>
+
+
+            </div>
+        </div>
+        
+
+
+    </form>
+    
+    
+
+    
+    <script src="https://kit.fontawesome.com/544dd54657.js" crossorigin="anonymous"></script>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+    <script src="main.js"></script>
+</body>
+</html>
