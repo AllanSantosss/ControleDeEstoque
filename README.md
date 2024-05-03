@@ -57,15 +57,15 @@ Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e
 
 ![Tela Cadastro de Loja](caminho/para/sua/imagem.jpg)
 
-![Tela Consulta Loja](caminho/para/sua/imagem.jpg)
+![Tela Consulta Loja](Imagem/ConsLoja.png)
 
-![Tela Cadastro de Produto](caminho/para/sua/imagem.jpg)
+![Tela Cadastro de Produto](Imagem/CadProd.png)
 
-![Tela Consulta de Produto](caminho/para/sua/imagem.jpg)
+![Tela Consulta de Produto](Imagem/ConsProd.png)
 
-![Tela Cadastro de Fornecedor](caminho/para/sua/imagem.jpg)
+![Tela Cadastro de Fornecedor](Imagem/CadForn.png)
 
-![Tela Consulta de Fornecedor](caminho/para/sua/imagem.jpg)
+![Tela Consulta de Fornecedor](Imagem/ConsForn.png)
 
 ## Conclusão
 
