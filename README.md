@@ -54,18 +54,23 @@ Permite o cadastro de pedidos com o respectivo fornecedor, produto, quantidade, 
 Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e Pedidos, com exceção dos Pedidos, todas as consultas são feitas com filtros, E necessário corrigir / acrescentar função para editar/excluir. *Verificar funcionalidades pendentes a serem inseridas no código.
 
 ![Tela Home](Imagem/HOME.png)
-
-![Tela Cadastro de Loja](caminho/para/sua/imagem.jpg)
-
+## Tela Home
+![Tela Cadastro de Loja](Imagem/cadLoja.png)
+## Tela Cadastro de Cliente
 ![Tela Consulta Loja](Imagem/ConsLoja.png)
-
+## Tela Consulta de Cliente
 ![Tela Cadastro de Produto](Imagem/CadProd.png)
-
+## Tela Cadastro de Produtos
 ![Tela Consulta de Produto](Imagem/ConsProd.png)
-
+## Tela Consulta de Produtos
 ![Tela Cadastro de Fornecedor](Imagem/CadForn.png)
-
+## Tela Cadastro de Fornecedor
 ![Tela Consulta de Fornecedor](Imagem/ConsForn.png)
+## Tela Consulta de Fornecedor
+![Tela Cadastro de Pedido](Imagem/CadForn.png)
+## Tela Cadastro de Pedido
+![Tela Consulta de Pedido](Imagem/ConsForn.png)
+## Tela Consulta de Pedido
 
 ## Conclusão
 
