@@ -77,10 +77,10 @@ Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e
 ![Tela Consulta de Fornecedor](Imagem/ConsForn.png)
 ## Tela Consulta de Fornecedor
 
-![Tela Cadastro de Pedido](Imagem/CadForn.png)
+![Tela Cadastro de Pedido](Imagem/CadPedido.png)
 ## Tela Cadastro de Pedido
 
-![Tela Consulta de Pedido](Imagem/ConsForn.png)
+![Tela Consulta de Pedido](Imagem/ConsPedido.png)
 ## Tela Consulta de Pedido
 
 
