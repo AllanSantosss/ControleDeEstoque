@@ -60,10 +60,10 @@ Até o momento e possível cadastrar e consultar Lojas, Produtos, Fornecedores e
 ## Tela Home
 
 ![Tela Cadastro de Loja](Imagem/cadLoja.png)
-## Tela Cadastro de Cliente
+## Tela Cadastro de Loja
 
 ![Tela Consulta Loja](Imagem/ConsLoja.png)
-## Tela Consulta de Cliente
+## Tela Consulta de Loja
 
 ![Tela Cadastro de Produto](Imagem/CadProd.png)
 ## Tela Cadastro de Produtos
